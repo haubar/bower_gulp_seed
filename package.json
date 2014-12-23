@@ -1,0 +1,27 @@
+{
+  "name": "gulp_seed",
+  "version": "1.0.0",
+  "description": "gulp seed ",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "gulp-coffee": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-coffee": "^2.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haubar/gulp_seed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haubar/gulp_seed/issues"
+  },
+  "homepage": "https://github.com/haubar/gulp_seed"
+}
