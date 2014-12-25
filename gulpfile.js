@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+var gulp = require('gulp');
 var coffee = require('gulp-coffee');
 
 gulp.task('coffee', function() { //'coffee'是排程名稱，可自定
