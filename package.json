@@ -9,7 +9,17 @@
   },
   "devDependencies": {
     "gulp": "^3.8.10",
-    "gulp-coffee": "^2.2.0"
+    "gulp-cache": "^0.2.4",
+    "gulp-coffee": "^2.2.0",
+    "gulp-concat": "^2.4.3",
+    "gulp-connect": "^2.2.0",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-less": "^2.0.1",
+    "gulp-livereload": "^3.3.0",
+    "gulp-notify": "^2.1.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,8 +28,8 @@
     "type": "git",
     "url": "https://github.com/haubar/gulp_seed.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "haubar",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/haubar/gulp_seed/issues"
   },
