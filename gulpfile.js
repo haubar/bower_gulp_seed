@@ -19,7 +19,7 @@ gulp.task('server', function () {
 });
 
 gulp.task('less', function() {
-        gulp.src('./style/*.less')
+        gulp.src('style/*.less')
                           .pipe(less())
                           .pipe(gulp.dest('./app/assets/'))
 });
