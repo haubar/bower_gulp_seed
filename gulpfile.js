@@ -24,3 +24,6 @@ gulp.task('coffee', function() { //'coffee'是排程名稱，可自定
                           .pipe(coffee()) //編譯
                           .pipe(gulp.dest('./app/assets/js')) //輸出位置
 });
+
+
+gulp.task('default', ['server', 'coffee', 'watch']);
