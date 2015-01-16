@@ -35,7 +35,7 @@ gulp.task('coffee', function() {          //'coffee'是排程名稱，可自定
 //watch
 gulp.task('watch', function() {
      livereload.listen();
-     gulp.watch('styles/*.less');
+     gulp.watch('less/*.less');
      gulp.watch('coffeejs/*.coffee');
 });
 
