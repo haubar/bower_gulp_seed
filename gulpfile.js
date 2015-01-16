@@ -26,9 +26,9 @@ gulp.task('less', function() {
 
 //coffee
 gulp.task('coffee', function() {                  //'coffee'是排程名稱，可自定
-        gulp.src('./js/coffee/*.coffee')  //來源檔案
+        gulp.src('coffeejs/*.coffee')  //來源檔案
                           .pipe(coffee())         //編譯
-                          .pipe(gulp.dest('./app/assets/js')) //輸出位置
+                          .pipe(gulp.dest('./js')) //輸出位置
 });
 
 //watch
