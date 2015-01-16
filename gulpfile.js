@@ -18,12 +18,23 @@ gulp.task('server', function () {
         });
 });
 
+gulp.task('less', function() {
+        gulp.src('./style/*.less')
+                          .pipe(less())
+                          .pipe(gulp.dest('./app/assets/'))
+});
 
-gulp.task('coffee', function() { //'coffee'是排程名稱，可自定
-        gulp.src('./app/coffeescripts/*.coffee') //來源檔案
-                          .pipe(coffee()) //編譯
+//coffee
+gulp.task('coffee', function() {                  //'coffee'是排程名稱，可自定
+        gulp.src('./js/coffee/*.coffee')  //來源檔案
+                          .pipe(coffee())         //編譯
                           .pipe(gulp.dest('./app/assets/js')) //輸出位置
 });
 
+//watch
+gulp.task('watch', function() {
+     gulp.watch('styles/*.less') //輸出位置
+     gulp.watch('coffeejs/*.coffee') //輸出位置
+});
 
 gulp.task('default', ['server', 'coffee', 'watch']);
