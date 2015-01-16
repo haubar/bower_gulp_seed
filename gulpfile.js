@@ -18,6 +18,14 @@ gulp.task('server', function () {
         });
 });
 
+//livereload
+gulp.task('livereload', function() {
+  gulp.src(['.tmp/styles/*.css', '.tmp/scripts/*.js'])
+    .pipe(watch())
+    .pipe(connect.reload());
+});
+
+//less
 gulp.task('less', function() {
         gulp.src('style/*.less')
                           .pipe(less())
@@ -37,4 +45,5 @@ gulp.task('watch', function() {
      gulp.watch('coffeejs/*.coffee') //輸出位置
 });
 
+//action
 gulp.task('default', ['server', 'coffee', 'watch']);
