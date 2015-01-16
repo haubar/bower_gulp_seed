@@ -11,39 +11,33 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify');
 
-//livereloal
+//webserver
 gulp.task('server', function () {
         connect.server({
           livereload: true,
         });
 });
 
-//livereload
-gulp.task('livereload', function() {
-  gulp.src(['.tmp/styles/*.css', '.tmp/scripts/*.js'])
-    .pipe(watch())
-    .pipe(connect.reload());
-});
-
 //less
 gulp.task('less', function() {
-        gulp.src('style/*.less')
-                          .pipe(less())
-                          .pipe(gulp.dest('./app/assets/'))
+    gulp.src('less/*.less')
+        .pipe(less())
+        .pipe(gulp.dest('./css'))
 });
 
 //coffee
-gulp.task('coffee', function() {                  //'coffee'是排程名稱，可自定
-        gulp.src('coffeejs/*.coffee')  //來源檔案
-                          .pipe(coffee())         //編譯
-                          .pipe(gulp.dest('./js')) //輸出位置
+gulp.task('coffee', function() {          //'coffee'是排程名稱，可自定
+    gulp.src('coffeejs/*.coffee')         //來源檔案
+        .pipe(coffee())                   //編譯
+        .pipe(gulp.dest('./js'))          //輸出位置
 });
 
 //watch
 gulp.task('watch', function() {
-     gulp.watch('styles/*.less') //輸出位置
-     gulp.watch('coffeejs/*.coffee') //輸出位置
+     livereload.listen();
+     gulp.watch('styles/*.less');
+     gulp.watch('coffeejs/*.coffee');
 });
 
 //action
-gulp.task('default', ['server', 'coffee', 'watch']);
+gulp.task('default', ['server', 'less', 'coffee', 'watch']);
