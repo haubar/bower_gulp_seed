@@ -1,15 +1,23 @@
-var gulp = require('gulp');
-var coffee = require('gulp-coffee');
-var cache = require('gulp-cache');
-var concat = require('gulp-concat');
-var connect = require('gulp-connect');
-var imagemin = require('gulp-imagemin');
-var jshint = require('gulp-jshint');
-var less = require('gulp-less');
-var livereload = require('gulp-livereload');
-var notify = require('gulp-notify');
-var rename = require('gulp-rename');
-var uglify = require('gulp-uglify');
+var gulp = require('gulp'),
+    coffee = require('gulp-coffee'),
+    cache = require('gulp-cache'),
+    concat = require('gulp-concat'),
+    connect = require('gulp-connect'),
+    imagemin = require('gulp-imagemin'),
+    jshint = require('gulp-jshint'),
+    less = require('gulp-less'),
+    livereload = require('gulp-livereload'),
+    notify = require('gulp-notify'),
+    rename = require('gulp-rename'),
+    uglify = require('gulp-uglify');
+
+//livereloal
+gulp.task('server', function () {
+        connect.server({
+          livereload: true,
+        });
+});
+
 
 gulp.task('coffee', function() { //'coffee'是排程名稱，可自定
         gulp.src('./app/coffeescripts/*.coffee') //來源檔案
