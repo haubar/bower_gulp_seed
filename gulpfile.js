@@ -12,14 +12,3 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 
 gulp.task('coffee', function() { //'coffee'是排程名稱，可自定
-<<<<<<< HEAD
-                    gulp.src('./app/coffeescripts/*.coffee') //來源檔案
-                          .pipe(coffee()) //編譯
-                          .pipe(gulp.dest('./app/assets/js')) //輸出位置
-});
-=======
-                                  gulp.src('./app/coffeescripts/*.coffee') //來源檔案
-                                  .pipe(coffee()) //編譯
-                                  .pipe(gulp.dest('./app/assets/js')) //輸出位置
-                                });
->>>>>>> 70ba976c498ed8961ab5292735b693e502152664
