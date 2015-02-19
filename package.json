@@ -36,5 +36,8 @@
   "bugs": {
     "url": "https://github.com/haubar/gulp_seed/issues"
   },
-  "homepage": "https://github.com/haubar/gulp_seed"
+  "homepage": "https://github.com/haubar/gulp_seed",
+  "dependencies": {
+    "wiredep": "^2.2.2"
+  }
 }
