@@ -17,7 +17,7 @@ gulp.task('server', function () {
 
 //less
 gulp.task('less', function() {
-    gulp.src('less/*.less')
+    gulp.src('styles/*.less')
         .pipe(less())
         .pipe(gulp.dest('./css'))
 });
@@ -25,8 +25,7 @@ gulp.task('less', function() {
 //watch
 gulp.task('watch', function() {
      livereload.listen();
-     gulp.watch('less/*.less');
-     gulp.watch('coffeejs/*.coffee');
+     gulp.watch('styles/*.less');
 });
 
 //action
