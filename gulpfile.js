@@ -1,12 +1,8 @@
 var gulp = require('gulp'),
-    concat = require('gulp-concat'),
     connect = require('gulp-connect'),
-    jshint = require('gulp-jshint'),
     less = require('gulp-less'),
     livereload = require('gulp-livereload'),
-    notify = require('gulp-notify'),
-    rename = require('gulp-rename'),
-    uglify = require('gulp-uglify');
+    browserify = require('gulp-browserify');
 
 //webserver
 gulp.task('server', function () {
@@ -15,11 +11,22 @@ gulp.task('server', function () {
         });
 });
 
+//browserify
+gulp.task('scripts', function () {
+      gulp.src('src/js/app.js')
+        .pipe(browserify({
+             insertGlobals : true,
+             debug : !gulp.env.production
+            }))
+        .pipe(gulp.dest('./build/js'))
+});
+
 //less
 gulp.task('less', function() {
     gulp.src('styles/*.less')
         .pipe(less())
         .pipe(gulp.dest('./css'))
+        .pipe(livereload());
 });
 
 //watch
