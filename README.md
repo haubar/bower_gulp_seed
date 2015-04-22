@@ -8,3 +8,5 @@ package:
   +  less: "^2.0.1"
   +  livereload: "^3.3.0"
   +  wiredep: "^2.2.0"
+
+##Search for Gulp plugins at: http://gulpjs.com/plugins/
