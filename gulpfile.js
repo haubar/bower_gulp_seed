@@ -1,39 +1,30 @@
 var gulp = require('gulp'),
-    connect = require('gulp-connect'),
+    //connect = require('gulp-connect'),
     less = require('gulp-less'),
-    livereload = require('gulp-livereload'),
+    //livereload = require('gulp-livereload'),
     browserify = require('gulp-browserify');
 
-//webserver
-gulp.task('server', function () {
-        connect.server({
-          livereload: true,
-        });
-});
-
 //browserify
-gulp.task('scripts', function () {
+gulp.task('js', function () {
       gulp.src('src/js/app.js')
         .pipe(browserify({
              insertGlobals : true,
              debug : !gulp.env.production
             }))
-        .pipe(gulp.dest('./build/js'))
+        .pipe(gulp.dest('./js'))
 });
 
 //less
-gulp.task('less', function() {
+gulp.task('css', function() {
     gulp.src('styles/*.less')
         .pipe(less())
-        .pipe(gulp.dest('./css'))
-        .pipe(livereload());
+        .pipe(gulp.dest('./css'));
 });
 
 //watch
 gulp.task('watch', function() {
-     livereload.listen();
-     gulp.watch('styles/*.less');
+     gulp.watch('styles/*.less', ['css']);
 });
 
 //action
-gulp.task('default', ['server', 'less', 'watch']);
+gulp.task('default', ['js', 'css', 'watch']);
