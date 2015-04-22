@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-    coffee = require('gulp-coffee'),
     cache = require('gulp-cache'),
     concat = require('gulp-concat'),
     connect = require('gulp-connect'),
@@ -25,13 +24,6 @@ gulp.task('less', function() {
         .pipe(gulp.dest('./css'))
 });
 
-//coffee
-gulp.task('coffee', function() {          //'coffee'是排程名稱，可自定
-    gulp.src('coffeejs/*.coffee')         //來源檔案
-        .pipe(coffee())                   //編譯
-        .pipe(gulp.dest('./js'))          //輸出位置
-});
-
 //watch
 gulp.task('watch', function() {
      livereload.listen();
@@ -40,4 +32,4 @@ gulp.task('watch', function() {
 });
 
 //action
-gulp.task('default', ['server', 'less', 'coffee', 'watch']);
+gulp.task('default', ['server', 'less', 'watch']);
