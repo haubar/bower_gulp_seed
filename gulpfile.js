@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-    cache = require('gulp-cache'),
     concat = require('gulp-concat'),
     connect = require('gulp-connect'),
     imagemin = require('gulp-imagemin'),
