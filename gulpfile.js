@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
     connect = require('gulp-connect'),
-    imagemin = require('gulp-imagemin'),
     jshint = require('gulp-jshint'),
     less = require('gulp-less'),
     livereload = require('gulp-livereload'),
