@@ -1,11 +1,9 @@
 {
-  "name": "bower_gulp",
+  "name": "bower_gulp_seed",
   "version": "1.0.0",
   "description": "bower & gulp seed",
   "main": "index.js",
   "devDependencies": {
-    "bower": "^1.4.1",
-    "colors": "^1.0.3",
     "gulp": "^3.8.11",
     "gulp-browserify": "^0.5.1",
     "gulp-connect": "^2.2.0",
@@ -13,8 +11,7 @@
     "gulp-less": "^2.0.1",
     "gulp-livereload": "^3.8.0",
     "gulp-rename": "^1.2.0",
-    "gulp-watch": "^3.0.0",
-    "mocha": "^2.2.4"
+    "gulp-watch": "^3.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
