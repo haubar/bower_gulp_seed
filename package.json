@@ -4,6 +4,7 @@
   "description": "bower & gulp seed",
   "main": "index.js",
   "devDependencies": {
+    "bower": "^1.4.1",
     "colors": "^1.0.3",
     "gulp": "^3.8.11",
     "gulp-browserify": "^0.5.1",
