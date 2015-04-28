@@ -1,7 +1,7 @@
 {
-  "name": "gulp_seed",
+  "name": "bower_gulp",
   "version": "1.0.0",
-  "description": "gulp seed ",
+  "description": "bower & gulp seed",
   "main": "index.js",
   "devDependencies": {
     "colors": "^1.0.3",
@@ -15,7 +15,8 @@
     "gulp-watch": "^3.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run compile"
   },
   "repository": {
     "type": "git",
