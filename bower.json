@@ -1,16 +1,10 @@
 {
-  "name": "bower_gulp",
+  "name": "bower_gulp_seed",
   "version": "1.0.0",
   "authors": [
     "haubar <haubarclack@gmail.com>"
   ],
   "description": "bower & gulp seed",
-  "main": "main",
-  "keywords": [
-    "bower",
-    "seed",
-    "gulp",
-  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -18,5 +12,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "keywords": [
+    "bower",
+    "seed",
+    "gulp"
+  ],
+   "dependencies": {}
 }
