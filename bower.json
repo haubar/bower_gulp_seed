@@ -4,7 +4,7 @@
   "authors": [
     "haubar <haubarclack@gmail.com>"
   ],
-  "description": "bower seed",
+  "description": "bower & gulp seed",
   "main": "main",
   "keywords": [
     "bower",
