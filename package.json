@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/haubar/gulp_seed.git"
+    "url": "https://github.com/haubar/bower_gulp_seed.git"
   },
   "author": "haubar",
   "license": "MIT",
