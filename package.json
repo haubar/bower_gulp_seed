@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gulp clean & gulp compile",
+    "deploy": "npm update & gulp clean",
     "gulp": "gulp"
   },
   "repository": {
